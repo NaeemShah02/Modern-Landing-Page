@@ -7,6 +7,17 @@
     color: #fff;
     padding: 20px;
 }
+@media screen and (max-width: 700px) {
+    /* Change the display to list for smaller screens */
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
 
 .logo {
     margin: 0;
@@ -65,6 +76,12 @@
 .hero a:hover {
     background-color: #0c0479;
 }
+@media screen and (max-width: 700px) {
+    .hero {
+        flex-wrap: wrap;
+    }
+
+}
 
 
 #features {
@@ -73,8 +90,6 @@
     padding: 20px;
     overflow: hidden;
 }
-
-
 
 .box {
     background-color: rgb(84, 160, 184);
@@ -95,13 +110,9 @@
     font-size: x-large;
     text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
     #features {
         flex-wrap: wrap;
-    }
-
-    .box {
-        width: 100%;
     }
 }
 
